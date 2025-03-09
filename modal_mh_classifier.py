@@ -34,7 +34,12 @@ image = (
 #     )
 # )
 
-@app.function(image=image,volumes={f"/vol/{VOLUME_NAME}": volume},gpu="A100-80GB", timeout=86400)
+@app.function(
+        image=image,
+        volumes={f"/vol/{VOLUME_NAME}": volume},
+        gpu="A100-80GB", 
+        timeout=86400, 
+        secrets=[modal.Secret.from_name("huggingface-secret")])
 def train_model():
     from huggingface_hub import login, HfFolder
     from datasets import load_dataset, load_from_disk
@@ -47,7 +52,7 @@ def train_model():
     import torch
 
     # Login to Hugging Face
-    login(token=HF_TOKEN)
+    login(token=os.environ["HF_TOKEN"])
 
     # Function to download and store dataset in Modal Volume
     dataset_id = "youralien/feedback_qesconv_16wayclassification"
