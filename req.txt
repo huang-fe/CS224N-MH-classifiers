@@ -1,0 +1,11 @@
+torch
+tensorboard
+setuptools<71.0.0
+scikit-learn
+transformers
+datasets
+tokenizers
+accelerate
+hf-transfer
+peft
+bitsandbytes 
