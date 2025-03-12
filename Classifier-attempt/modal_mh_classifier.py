@@ -38,8 +38,8 @@ image = (
         image=image,
         volumes={f"/vol/{VOLUME_NAME}": volume},
         gpu="A100-80GB", 
-        timeout=86400, 
-        secrets=[modal.Secret.from_name("huggingface-secret")])
+        timeout=86400)#, 
+#        secrets=[modal.Secret.from_name("huggingface-secret")])
 def train_model():
     from huggingface_hub import login, HfFolder
     from datasets import load_dataset, load_from_disk
@@ -47,12 +47,17 @@ def train_model():
     from huggingface_hub import HfFolder
     import numpy as np
     from sklearn.metrics import f1_score
+    from transformers.utils import logging
     from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
     #from trl import SFTTrainer
     import torch
 
     # Login to Hugging Face
-    login(token=os.environ["HF_TOKEN"])
+    login(token= HF_TOKEN)#os.environ["HF_TOKEN"])
+
+    logging.set_verbosity_info()
+    logger = logging.get_logger("transformers")
+    logger.info("LOGGER")
 
     # Function to download and store dataset in Modal Volume
     dataset_id = "youralien/feedback_qesconv_16wayclassification"
@@ -98,8 +103,8 @@ def train_model():
 
     # Model id to load the tokenizer
     # model_id = "meta-llama/Llama-2-7b-hf"
-    model_id = "meta-llama/Llama-3.1-8b"
-    model_name = "Llama3.1-8b" # "Llama2-7b"
+    model_id = "meta-llama/Llama-3.2-1b"
+    model_name = "Llama3.2-1b" # "Llama2-7b"
 
     # Load Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -184,6 +189,7 @@ def train_model():
         score = f1_score(
                 labels, predictions, labels=labels, pos_label=1, average="weighted"
             )
+        logger.info(f"Computed F1 Score: {score}")
         print(f"Computed F1 Score: {score}")
         return {"eval_f1": float(score) if score == 1 else score}
     
@@ -200,13 +206,13 @@ def train_model():
         # logging & evaluation strategies
         logging_strategy="steps",
         logging_steps=100,
-        eval_strategy="epoch",
-        save_strategy="epoch",
+        eval_steps=1,
+        eval_strategy="steps",
+        save_strategy="steps",
         save_total_limit=2,
         load_best_model_at_end=True,
         # use_mps_device=True, # mps device is a mac thing
         label_names=labels,
-        metric_for_best_model="f1",
         # push to hub parameters
         report_to="tensorboard",
         push_to_hub=True,
@@ -222,6 +228,9 @@ def train_model():
         eval_dataset=tokenized_dataset["test"],
         compute_metrics=compute_metrics,
     )
+
+    print("Running manual evaluation")
+    trainer.evaluate()
     # trainer = SFTTrainer(
     #     model=model,
     #     args=training_args,
