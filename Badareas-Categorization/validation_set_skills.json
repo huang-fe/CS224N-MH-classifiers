@@ -1,0 +1,2006 @@
+[
+    {
+        "input": [
+            "Seeker: It is annoying and sometimes I get really down about it. I just want someone to talk to....I just want to know that someone will listen once in a while. I\u2019m honestly not that needy but everyone needs to know that someone will listen at some point. I am appreciative of the fact that you are taking time to hear what I have to say. I wonder what I should do sometimes. I try to tell friends and family that I cannot always be the problem solver, I try to make them see that I deserve a chance to ask advice, to just vent, or to just have a light talk about the weather or a party or something. They don\u2019t seem to hear me. One friend said she thought I was blowing it out of proportion. But that\u2019s the way I feel. What approach would you take if you were me?",
+            "Helper: Yes, everyone needs someone to talk to.I think you deserve people who will be there for you when you need them to, and not only just take take and not give anything..",
+            "Seeker: How do I get through to these people or do I need new friends?? Lol. Because sometimes I think a new friend group isn\u2019t a bad idea....",
+            "Helper: This is probably hard to hear but you need someone you can count on, I think it would be a good idea for you to get new friends that would be their for you and wont take you for granted.",
+            "Seeker: I think it is hard to do that but maybe I should seek out a few new people to be around, some more give and take would be really nice. Not sure how I will do this though...",
+            "Helper: Do you go out to any public places?",
+            "Seeker: I\u2019m raising my grandchild. Maybe in a group of others in a situation like mine I\u2019d be able to find what I am looking for? Well, with COVID and my one medication causing a low white blood cell count I cannot go out very much.. Once I can go out more I am sure it would be easier",
+            "Helper: Yes that work, and yes i know its a bit risky, maybe you can try joining any online groups of people that have things in common with you.",
+            "Seeker: That\u2019s a great idea. I think I will seek out some online groups for support and some where I have similar interests like a book group or something. That\u2019s a great way to start!. I\u2019m actually a little excited to give this a try!",
+            "Helper: Yes book clubs are great."
+        ],
+        "helper_index": 7,
+        "conv_index": 306,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Questions"
+            ],
+            "feedback": "The goal is to validate the seeker's willingness to try solutions to their concerns. It would be better to follow up with a question about how they feel this might benefit them.",
+            "alternative": "An online book club sounds like a wonderful idea! It sounds like you're starting to think about some ways to meet some new people. How do you feel this might benefit you?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hi! Is there anything you'd like to talk to me about today?",
+            "Seeker: Hi, yes. I am having a really hard time and feeling depressed.",
+            "Helper: I am sorry to hear that. Would you like to tell me what the problem is?",
+            "Seeker: I feel like I am very isolated. I can not leave my house because I am at high risk of getting Covid. So I feel so alone and kind of helpless since all this has started.",
+            "Helper: I can understand how that feels - I have not been able to go out for weeks either. Are you able to have visitors?"
+        ],
+        "helper_index": 2,
+        "conv_index": 66,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Self-disclosure",
+                "Questions"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings and provide empathy without imposing personal experiences. Even though it\u2019s great to show empathy, self-disclosure should be used sparingly and the focus should be kept on the seeker. It might be better to express understanding without sharing personal experiences and to ask open-ended questions that encourage the seeker to express their feelings more.",
+            "alternative": "I'm really sorry that you're feeling this way. How have these feelings been affecting your daily life?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: Kind of, but the schedule is a bit weird, like every other day I only have an afternoon class and on the others I have both morning and afternoon, and if a teacher has a meeting then no class. Now that I'm saying it I guess it is a bit irregular.",
+            "Helper: it sounds like your schedule is different almost everyday. I know I find schedule changes like that to be hard to manage",
+            "Seeker: Yeah, my sleeping schedule is also very irregular due to this. At most I get 5 hours on a good day",
+            "Helper: ouch without the right amount of sleep , everything is difficult. Have you thought of setting your own schedule to follow?",
+            "Seeker: I'm not really good with stuff like that, every time I try and make a schedule for myself I end up disregarding it because there' s just no point. Also I think i should mention that I do online school through google meet",
+            "Helper: no point- what do you mean by that ?",
+            "Seeker: I mean that its not like anyone is holding me to the schedule anyways, and I feel like I should spend my time doing something I like instead, you know?",
+            "Helper: I see - you find it hard to stay motivated when something pulls your attention to something you are more interested in doing . Does that sound right ?",
+            "Seeker: yeah, thats right",
+            "Helper: Have you thought about why doing your school work is important ?",
+            "Seeker: Yeah, I know its important and I always end up finishing it, it just seems like there is not enough time and the feeling drags me down. I don't have long until I graduate, but I cant find the motivation. Instead of learning in class, I end up teaching myself the content two hours before an assignment is due.",
+            "Helper: have you thought about scheduling free time for your self ? It can give you something to look forward to and help keep you motivated /Almost like a reward for finishing your school work"
+        ],
+        "helper_index": 8,
+        "conv_index": 107,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Suggestions",
+                "Questions",
+                "Validation"
+            ],
+            "feedback": "The goal is to help the seeker find a strategy to manage their time better. It would be good to first explore their current methods and their effectiveness before suggesting a new one.",
+            "alternative": "Sounds like you're rushing to learn the material right before class. That can be stressful. What are some strategies you've tried to manage your time better? How effective were they?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: I'm sooo pissed at my friend!",
+            "Helper: Hi. I see that you are upset. I have been at times as well. What about your friend is making you upset?",
+            "Seeker: I was completely betrayed by him!",
+            "Helper: What about him has made you feel betrayed?",
+            "Seeker: I told my friend I kind of have a thing for this guy in our friend group and he actually told the guy! This guys has a girlfriend and I'm really cool with her. Now everything is soooo awkward",
+            "Helper: I have been in situations where similar comments have been made.",
+            "Seeker: My friend has been drinking a lot and he cant keep his drunk mouth shut. I'm like ready to completely dump him as a friend in a minute. I mean, it's covid. He should just stay tf home",
+            "Helper: Could you tell him that he could see a professional that could help him quit drinking? What ways could you find some support groups for your friend regarding his issues?",
+            "Seeker: I mean, I have sort of said it before in a really joking way. But now i'm worried it may be a problem. I feel like if he wants help he should find it himself",
+            "Helper: It might be worthwhile to recommend him look into getting some counseling about his issues that you seem to think are a real issue."
+        ],
+        "helper_index": 4,
+        "conv_index": 45,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Suggestions",
+                "Empathy"
+            ],
+            "feedback": "The goal is to explore the seeker's feelings and understand their perspective. It might be better to avoid suggesting solutions and instead focus on the seeker's feelings and experiences.",
+            "alternative": "It must be tough to see your friend struggling and it affecting your friendship. Do you want to discuss how you're feeling about all this?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: i'm sorry it's been so weird for you. but you are killing it with your grades. you shouldbe proud!",
+            "Seeker: thank you! its been an adjustment but thankfully im doing good.",
+            "Helper: its got to be good being back home"
+        ],
+        "helper_index": 11,
+        "conv_index": 305,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Reflections",
+                "Questions"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings and to encourage them to express more about their experiences. Rather than assuming the seeker's feelings about being home, it would be better to ask them directly.",
+            "alternative": "How does it feel being back home? Do you find any comfort in it?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: hello",
+            "Helper: Hi! How's it going today?",
+            "Seeker: am somewhat fine",
+            "Helper: That doesn't sound super positive?",
+            "Seeker: so my almost supposedly wife ran out on me on our wedding",
+            "Helper: What's going on? What made her do this?",
+            "Seeker: so now am back in our apartment reminiscing all the times we had. that's my question too, I don't know why she left. Maybe she had been cheating and ran to her man but why wait till the wedding day. if she had a problem she could tell me before that",
+            "Helper: Not knowing why must be hard, this sounds like it was more of her problem than yours. That's a terrible thing to do to you.",
+            "Seeker: i don't know what to do, should i call her or just wait till she is ready to explain",
+            "Helper: I think she definitely owes you an explanation for what she's done. That was the worst way for her to do that.",
+            "Seeker: should i move places because this place has too many memories, should i burn her things or send them to her family. well she hasnt bothered to look for me so far and its been a week",
+            "Helper: Time will help with some of that. Once you're able to make new memories in your apartment it won't be so unbearable. But maybe her hurting you this way means you don't need that explanation because she simply wasn't right for you.",
+            "Seeker: and she couldn't say no when i proposed or any day before the wedding",
+            "Helper: As much as it hurts, it sounds like you're better off without her."
+        ],
+        "helper_index": 6,
+        "conv_index": 226,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Empathy"
+            ],
+            "feedback": "The goal is to provide validation and empathetic support. It might be better to avoid making definitive statements about the seeker\u2019s relationship as it could come across as dismissive. Instead, acknowledge the seeker's pain and offer understanding.",
+            "alternative": "I can sense the pain you're going through. It really hurts when people we care about don't meet our expectations or behave in ways that we find hurtful. I'm here for you.",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: Well, trust has to come with time... it cannot happen instantly. Perhaps you are being too hard on yourself?",
+            "Seeker: I was trusted before, but not now",
+            "Helper: Sometimes you just run up against people who are not trustworthy themselves. It's best to just ignore these toxic people!. Please know that it is NOT your problem, it it's their's!",
+            "Seeker: i understand that. but i feel lonely when friend says i am having issues, i dont want to discuss with anyone, but other friends get to know of the issue and tell me about it in a casual conversation. i feel when some other had got to know of it, why it could not have been discussed with me",
+            "Helper: I do understand how it feels to be gossiped about - that has happened to me more than once and it is really painful."
+        ],
+        "helper_index": 6,
+        "conv_index": 115,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Self-disclosure",
+                "Reflections"
+            ],
+            "feedback": "The goal is to focus on the seeker's experiences. It would be beneficial to refrain from self-disclosure and direct the discussion back towards the seeker's feelings. Additionally, it's important to listen attentively and reflect accurately--the seeker never spoke of gossip necessarily, but of feeling like they aren't trusted while others are.",
+            "alternative": "It sounds like you're feeling left out and confused by your friends' actions. Can you tell me more about how this is affecting you?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: I am glad to help, Hopefully, considering these options will not only reduce your stress from being busy with being a parent and with school, but it will also bring you closer to your child.",
+            "Seeker: Yes, and both of those are major goals of mine. But the stress sometimes feels inevitable.",
+            "Helper: Sometimes stress is inevitable. You just have to know how to channel it. Some use physical activity, others use journaling. These seem to be outlets you can consider?",
+            "Seeker: The physical activity for sure. I do so much writing with my Master's program. Sometimes I feel like my hand will fall off.",
+            "Helper: Physical activity seems to be the option you are most interested in. Have you considered setting daily exercise goals?",
+            "Seeker: Yes, I am a pretty active and fit person. Yes, I do try to go to the gym 3 times per week at least.",
+            "Helper: Having goals for a given day can help motivate you to do the exercises and keep your head cleared from stress."
+        ],
+        "helper_index": 10,
+        "conv_index": 171,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Questions"
+            ],
+            "feedback": "The goal is to support the seeker in dealing with stress through physical activity. It would be good to validate the seeker\u2019s choice of physical activity and ask how they feel about setting daily goals instead of stating that setting goals can help them.",
+            "alternative": "It sounds like you are quite disciplined when it comes to physical activity. How do you feel about setting daily exercise goals?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: Just found out my position will be eliminated in January. Freaking out! 1",
+            "Helper: Wow. So you're being laid off soon?"
+        ],
+        "helper_index": 0,
+        "conv_index": 275,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Validation"
+            ],
+            "feedback": "The goal is to provide emotional support and validate the seeker's feelings. It might be better to acknowledge the stress this news has caused and express empathy prior to asking more questions.",
+            "alternative": "That sounds really tough. Losing a job is a stressful thing to face, especially in these uncertain times. How are you feeling about it?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: Hi. I'm feeling depressed and overwhelmed.",
+            "Helper: Please tell me more about it, when did it start?",
+            "Seeker: It all started earlier this year. I live with my parents because I'm unable to care for myself , due to a disability. Well my dad has dementia, and my mom, who was the primary caregiver, was diagnosed with cancer. She's been in and out of hospital so now its up to me to keep everything afloat.,. I'm having a really hard time with it. Between work, school, keeping up the house, and caring for my dad, it's a lot to handle.",
+            "Helper: That's very exhausting doing that much, I really feel bad for you, you're a strong person to be able to handle so much by yourself",
+            "Seeker: Thanks. But I'm really not that strong. It's really exhausting and overwhelming. My depression and anxiety are through the roof, and honestly, I'm not sure how long I can keep this up.",
+            "Helper: Someone else would have collapsed already. Do you go outside a lot?",
+            "Seeker: I actually am not able to go outside. Its been a few weeks.",
+            "Helper: Maybe that's why your depression got worse. We need the sun and fresh air to feel better",
+            "Seeker: i try to avoid going out at all. It's hard for me to get around. Even taking the bins out is a struggle. I can't even walk my dog. I just open the door and he goes out , does his business and comes back.",
+            "Helper: I understand it's hard for a person like you. However, as I said, from my own experience, staying indoor for a long period does more harm than good. You don't have to go far, even just out in your backyard to have some sunlight as the first step is good enough",
+            "Seeker: maybe i will try that. little by little. I'm really scared of the pandemic. I don't want to get sick.",
+            "Helper: Just take one step at a time, I believe you can do it as long as you put your mind in. If you don't get close to anyone and wear a mask, you should be fine",
+            "Seeker: Yeah, that is what they are saying in the news. It's just that folks out here are idiots and don't want to follow protocols. We are in a red zone where I live",
+            "Helper: it's pretty bad here too but as long as you avoid crowded place, you'll be fine"
+        ],
+        "helper_index": 6,
+        "conv_index": 373,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Validation"
+            ],
+            "feedback": "The goal is to empathize with the seeker's fear about the pandemic. It might be better to not dismiss the seeker's concerns about the situation in their local area and validate their feelings.",
+            "alternative": "I can understand your concern, especially with the situation in your area. It's important to stay cautious and avoid crowded places. How are you handling this situation so far?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: I am doing well and how are you feeling today?",
+            "Seeker: I'm feeling okay today, a bit anxious for my finals this week",
+            "Helper: Thank you for sharing, feeling anxious days before an exam is a normal. I am also anxious about my upcoming exam this week.",
+            "Seeker: What is the exam for?",
+            "Helper: I am preparing to sit to become a clinical counselor. I can relate to feeling anxious. You are not alone. What do you think is triggering your anxiety?",
+            "Seeker: I think it might be the fear of failure that triggered it",
+            "Helper: Research has shown that fear of failure does stem from feelings of anxiety, but is it possible to look at fear of failure from a different perspective?",
+            "Seeker: I think it might be possible to look at it from a different perspective",
+            "Helper: Do you think you can channel your fear of failure into positive energy?",
+            "Seeker: I think I probably could. How do you think I could do that?",
+            "Helper: You can turn your anxiety into extra energy to plan and prepare. Having anxiety can give you a boost of energy, which gives you an advantage to achieve your goal.",
+            "Seeker: I can probably do that, the anxiety can motivate me to create a studying plan",
+            "Helper: Yes, indeed. Having anxiety will keep you anchored to your study plan which would increase your ability to perform well for the exam.",
+            "Seeker: I can do that",
+            "Helper: Awesome! In addition, as you follow your study plan, remember to pace yourself."
+        ],
+        "helper_index": 8,
+        "conv_index": 329,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Structure"
+            ],
+            "feedback": "The goal is to wrap up the conversation and provide a helpful tip for the seeker. However, it would be better to ask if the seeker has any other concerns or questions before ending the conversation.",
+            "alternative": "I'm really glad to hear that you're feeling positive about this. Remember to take things at a pace that's comfortable for you. Is there anything else you'd like to discuss or explore related to this topic?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Well if you have a car, maybe you would be able to find something a little outside your area that would pay more. Try taking a look on indeed.com or even craigslist for open positions. You may be surprised by what you find and a change in career can sometimes be a positive thing",
+            "Seeker: I just got out of the Air Force. I really need a steady paycheck right now.",
+            "Helper: The only way you are going to be able to get a job is by looking what is out there. If you can work retail, it is a great time for that because of the holidays. Even if it is a temp position, at least it is something.",
+            "Seeker: And the holidays are just about here. This is going to suck.",
+            "Helper: It is a difficult time in general for a lot of people. I think most people are going to be understanding this year when it comes to gift giving. I wouldn't worry too much about that and instead focus on what you are able to do about the situation.",
+            "Seeker: This is the first time in 3 years i will be home for Christmas I was hoping to make for not being here.",
+            "Helper: Perhaps think of you just being home as the gift. Having time to spend with your family and friends is likely to mean more than something you can buy.",
+            "Seeker: My luck we won't be able to leave the house.",
+            "Helper: Then make it a great experience in the house. Make decorations and do holiday things. There is a lot people can do this time of year without going outside that is fun and meaningful. Try to be optimistic even in tough times. Sometimes it is all we can do to get by."
+        ],
+        "helper_index": 8,
+        "conv_index": 395,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Empathy"
+            ],
+            "feedback": "The goal is to keep the seeker positive and motivated. However, it would be better to validate the seeker's frustration first and then suggest ways to make the most out of the situation.",
+            "alternative": "It can be really frustrating when things don't go as planned, especially during festive times. Maybe there are ways to make it special even if you have to stay in. What are some of your thoughts about this?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: hello, what is on your mind today?",
+            "Seeker: my baby who died in my womb at 5th month. i crying everyday and went to depression. how to overcome this pain",
+            "Helper: miscarriages are really hard. I lost a set of twins about 15 years ago. It still makes me sad to wonder what they would be today.",
+            "Seeker: yes , mine is very worst case .In winter time at midnight heavy bleeding done and lost baby. oh god , you are a such brave person",
+            "Helper: I have had other children since then, and they make me happy but there will always be a sense of loss. i am sure that is not what you wnat to hear right now but i dont like to lie"
+        ],
+        "helper_index": 2,
+        "conv_index": 352,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Self-disclosure",
+                "Empathy",
+                "Reflections"
+            ],
+            "feedback": "The goal is to help the seeker feel understood and validated. It would be better to express empathy for the seeker's situation without making assumptions or providing personal information. It's important not to impose personal experiences onto the seeker.",
+            "alternative": "I can only imagine how much pain you're going through right now. The loss of a child is something that touches you deeply and stays with you. It's okay to take the time to grieve, you don't have to rush your healing process.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: I just have to focus on my studies and not let what is going on impact my studies.",
+            "Helper: I believe in you and i think you will do great!",
+            "Seeker: Do you have any advice on keeping me focused?",
+            "Helper: What is your exam on?"
+        ],
+        "helper_index": 5,
+        "conv_index": 184,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Questions"
+            ],
+            "feedback": "The goal is to provide the seeker with strategies to stay focused, as they have requested. Rather than asking about the subject of the exam, it might be better to ask about their study habits or what strategies they have found effective in the past.",
+            "alternative": "You mentioned wanting to stay focused on your studies. Have you found any strategies that work well for you in the past? Or are there new methods you'd like to try?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: It was unexpected and sudden. I found out he was cheating on me.",
+            "Helper: That is a horrible shock to hear something like that. I thank you for expressing yourself today it can be hard to share a disappointment.",
+            "Seeker: I am really strict about lies and he broke my trust, so I felt like I had to break-up with him.",
+            "Helper: You have good instincts when you can face a situation and make a judgment and decision."
+        ],
+        "helper_index": 3,
+        "conv_index": 156,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Reflections"
+            ],
+            "feedback": "The goal is to empathize with the seeker's situation and also acknowledge the difficulty of their decision. It might be better to avoid making absolute statements and assumptions, instead, articulating understanding and appreciation for their courage.",
+            "alternative": "It must have been a tough decision on your part, but it also shows your strength and commitment to your values.",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Seeker: I think thats a good idea. I am concerned it may not work out. What would i do then?",
+            "Helper: Is there something specific you are feeling you need more help with? Maybe the people you are asking do not understand exactly what you need help with.",
+            "Seeker: Decision making and the little details are where I am struggling. I've had adequate training, but i still feel as though I lack the expertise needed to do my job well. Someimtes I get the support I need, and other times i don't. I'm wondering what i should do in times where I am not getting the support I need if its not available.",
+            "Helper: That is understandable. I have been in situations where I had to make difficult decisions at my job too. Overtime you will be gaining experience and it will most likely get easier or you'll get better."
+        ],
+        "helper_index": 7,
+        "conv_index": 394,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Self-disclosure",
+                "Structure"
+            ],
+            "feedback": "The goal is to provide reassurance and encouragement. Nevertheless, it would be better to re-focus the conversation back to the seeker and their feelings after the self-disclosure.",
+            "alternative": "That is understandable. I've also been in situations where I had to make difficult decisions at work. It sounds like you're putting a lot of pressure on yourself. What do you feel might be helpful for you when you don't get the support?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": false,
+            "alternative-hasself-disclosure": true,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hello",
+            "Seeker: Hi.",
+            "Helper: What is the problem i can help you with",
+            "Seeker: I am having a lot of depression and anxiety due to undergoing chemo for a cancer diagnosis. I don't know what to do to help me feel better.",
+            "Helper: I am sorry about how you are feeling. I can understand how being in that situation can cause you to have anxiety. Do you have a support system that can help?",
+            "Seeker: It comes and goes in waves. Sometimes I feel strong and other times I feel so weak.",
+            "Helper: I personally have dealt with depression and i know how isolation all of that can be. Sometimes i find it helps to give yourself time to feel what you need to feel first before trying to feel better. I personally have dealt with depression and i know how isolation all of that can be. Sometimes i find it helps to give yourself time to feel what you need to feel first before trying to feel better.",
+            "Seeker: Yes. That is true, but it can be so overwhelming at times.",
+            "Helper: Yes it definitely can."
+        ],
+        "helper_index": 4,
+        "conv_index": 292,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Empathy",
+                "Questions"
+            ],
+            "feedback": "The goal is to show empathy and help the seeker explore their feelings. It could be more effective to ask a question or make a reflective statement to keep the conversation going and help the seeker express more.",
+            "alternative": "It sounds like these overwhelming moments can be quite challenging. Do you notice anything in particular that triggers them?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: Hi. What brings you here today?",
+            "Seeker: I am having a hard time with the realization that my once strong friendships are no longer as strong. I feel disconnected with them. The limitations the pandemic has set for all of us have been great. I am unsure if I will ever regain those friendships",
+            "Helper: I understand that. The pandemic has been very hard to keep connected with everyone. Have you tried talking to your friends about how you are feeling?",
+            "Seeker: Yes, I have tried to message them daily, but the responses have always been clipped and or the response comes after couple days. I do feel other friendships have formed within each community, feeling a bit left out. I feel silly, like a teenage girl, who wants to be included. Just want to feel as though I am still part of their lives.",
+            "Helper: It's completely normal to feel like that. I have been in your exact shoes. I would suggest inviting one of them out for lunch or dinner and express face to face how you are feeling right now.",
+            "Seeker: I was thinking the same thing, but I am unsure I feel awkward now, I feel like I do not them as I thought I did. I am unsure why I feel this way. one of them is my daughters god mother and the text are there but they are not like they use.. I am unsure if I should ask why she has time for others and not us... just saying it makes me feel weird. anyone there?",
+            "Helper: She may be going through something at home or having family issues. We truly never know what the other person is going through unless we have that uncomfortable situation. My suggestion would be to rephrase that question slightly to her.",
+            "Seeker: I agree with you, just seems really strange since we were inseparable before the pandemic. I am also aware many are going through this situation just thought my friendships were stronger and distant would not be an issue. I will, never did I think I would hesitate whats going on..",
+            "Helper: It's completely natural. Instead of texting her, have you tried calling?",
+            "Seeker: Yes, I have. The conversation have been superficial, like small talk. There is nothing to share, I am guessing. My daughter has had lots of dance functions despite the pandemic and yet I have not felt supported. Perhaps shes not okay with venturing out during the pandemic.. though I do see on social media shes meeting other friends in social settings. Perhaps I need to be more open and not be so distant? Maybe its me and I am not seeing it?",
+            "Helper: How long have you been friends?",
+            "Seeker: we are both 35 and we met in pre K. we are lifetime friends. shes a sister to me. At some point our parents use to live in the same apartment complex, our parents are great friends as well. I was there for her babies birth, when she found out what she was having. We have shared grand moments together.",
+            "Helper: You both have been friends for such a long time. I'm so jealous of friendships like that. I would definitely ask her for lunch. You all have been through so much together. This conversation with her would be a weight off your shoulders."
+        ],
+        "helper_index": 6,
+        "conv_index": 354,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy",
+                "Suggestions"
+            ],
+            "badareas": [
+                "Self-disclosure",
+                "Structure"
+            ],
+            "feedback": "The goal is to support the seeker in exploring their feelings and finding a solution. While it's great to empathize with the seeker, it might be better to avoid sharing personal feelings of envy. Also, before making a suggestion, it would be good to confirm if the seeker is open to suggestions or if they want to explore their feelings more.",
+            "alternative": "You both have been friends for such a long time and have shared many important life moments. How would it feel to reach out to her directly and share your feelings?",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: We all make mistakes, don't we? Don't worry too much about it. Just be honest to your manager regarding what transpired. The way you feel bad about it while chatting with me, I am sure you are a great employee that wants to make things right.",
+            "Seeker: We do, and its my first mistake in the 8 months I've been working here.",
+            "Helper: I am sure it's a honest mistake and let your manager know that you will be better at time management and prioritization moving forward.",
+            "Seeker: Oh thank you thats kind of you to say. That is good advice.",
+            "Helper: You tell him that this has been a valuable lesson and you have learned a lot from it. And that this mistake would not happen again. If your manager is a leader and not a boss, he would appreciate your honesty and give you chance to rectify. Otherwise, at least, you now know what type of manager you are working for!",
+            "Seeker: you are so right!!. thank you for putting this all into perspective",
+            "Helper: I have been in similar situation a lot. All the best :)"
+        ],
+        "helper_index": 7,
+        "conv_index": 133,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Self-disclosure"
+            ],
+            "feedback": "The goal is to keep the focus on the seeker, not on the helper.",
+            "alternative": "Absolutely. It sounds like you can make it right. The best of luck during your conversation with your manager!",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I'm concerned about my job. I have been out of work for the past 5 weeks because I tested positive for COVID-19.",
+            "Helper: Oh I am so sorry to hear that! Are you at least getting sick pay? If not, are you getting advice about help you might be able to access? Oh I am so sorry to hear that! Are you at least getting sick pay? If not, are you getting advice about help you might be able to access? (sorry for duplication, not sure what happened there!)",
+            "Seeker: It just keeps getting better... I applied for the Pandemic Unemployment Assistance and was approved. The next day, I got an email asking me to verify my identity (I am fine with that. It actually makes good sense.)...",
+            "Helper: So you have been getting some assistance?",
+            "Seeker: So I did as instructed and got the message on the website thanking me for verification. The following week I got a physical letter saying I was approved and the award amount per week. I have gone online once a week and qualified, as one is supposed to do, and still I have not received a cent.",
+            "Helper: I see, so you are really financially struggling at the moment? Is there anywhere else you could apply for assistance? What about a foodbank?",
+            "Seeker: Calling the customer service line is futile. The computer just plays a recording that the agents are on other calls and then it disconnects the call.",
+            "Helper: I hear you there - I spent a long time on hold for an official matter the other day. I guess that everyone is really desperate for help and advice right now."
+        ],
+        "helper_index": 5,
+        "conv_index": 256,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Self-disclosure",
+                "Empathy"
+            ],
+            "feedback": "The goal is to provide empathy and support to the seeker. It would be better to avoid making the situation about yourself and keep the focus on the seeker.",
+            "alternative": "I can only imagine how frustrating that must be. Dealing with these systems can be really overwhelming, especially when you're already dealing with so much. ",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy":true,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: Hi there, how are you today?",
+            "Seeker: I\u2019m doing ok. Have been feeling a bit anxious about my job lately.",
+            "Helper: Is this because of the pandemic? I know a lot of people are worrying about their jobs because of this."
+        ],
+        "helper_index": 1,
+        "conv_index": 397,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Reflections",
+                "Questions",
+                "Empathy"
+            ],
+            "feedback": "The goal is to understand the seeker's unique personal experience and emotions, but by quickly attributing the Seeker's anxiety to the pandemic, it might seem as if the Helper is making assumptions. It would be better to ask open-ended questions to get a better understanding of what is causing the anxiety for the Seeker.",
+            "alternative": "I'm sorry to hear that you're feeling anxious. Can you tell me more about what's been causing this anxiety at your job?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: How can I help?",
+            "Seeker: am affected by depression how can you help me",
+            "Helper: let's start with a few questions if that's ok. how long have you been feeling depressed?"
+        ],
+        "helper_index": 2,
+        "conv_index": 240,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Questions"
+            ],
+            "badareas": [
+                "Empathy",
+                "Validation"
+            ],
+            "feedback": "The goal is to express empathy and validate the feelings of the seeker. It would be better to acknowledge the seeker's feeling of depression and express compassion before transitioning to the questions.",
+            "alternative": "I'm really sorry to hear that you're feeling this way. I'm here to support and listen. Let's start with how long you've been feeling this way.",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Yeah I'm really depressed. I just found out my buddy of 20 years is now posting that he believes Trump and that the election is being stolen from him. I thought I knew him but now I don't know.",
+            "Helper: That's a really tough thing to deal with. It can be hard to be confronted with a different, unexpected side from a trusted friend.",
+            "Seeker: And I had this guy as my best man for my wedding",
+            "Helper: Perhaps you can try reasoning with him. I'm certain that your judgement in friendships is not flawed and although he has made quite the yikes choice, he still has redeemable qualities. Especially if he wasn't making his political viewpoint known until recently. It leans towards the idea that with the right information, he'll understand that Trump is a big loser and he lost lmao",
+            "Seeker: I tried but he says that he's sick and tired of Facebook and Twitter putting a muzzle on Trump and ever since he's been on Parler he now knows the truth. It's like he doesn't believe science anymore",
+            "Helper: Consider directing him to news sources that are not Twitter or Facebook, though I know this is hard to do. it is just a teensy bit funny he thinks that Trump is being muzzled on twitter when they are not deleting any of his tweets.",
+            "Seeker: Yeah he thinks it's wrong that Twitter is flagging his tweets and he's mad that Facebook are taking down these groups that he feels are telling the truth",
+            "Helper: This seems like a very sudden reaction from him, from what I've gathered, seeing as how it took you by surprise. Is there anything going on his life that may have put him into a negative mindset? Perhaps he's having problems in a relationship or at work that is leading him to rabbit holes on the internet.",
+            "Seeker: He just got furloughed. Maybe like 3 weeks ago",
+            "Helper: I'm so sorry to hear that. He might be struggling with that and looking to shift his negative feelings onto another issue, one that has the support of many. It could be providing him comfort to be angry at the suppression of Twitter rather than coming to terms with his own turmoil. I think talking to him about his job status might be a start in reasoning his new outlook."
+        ],
+        "helper_index": 6,
+        "conv_index": 290,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Reflections"
+            ],
+            "feedback": "The goal is to guide the seeker in supporting their friend, but it would be more beneficial not to make assumptions about the friend's feelings. Instead, encourage the seeker to have open conversations with their friend.",
+            "alternative": "I'm really sorry to hear about his job situation. It might be that his recent experiences could be affecting his overall outlook. Have you had a chance to talk to him about his situation?",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Wow, that's really good advice. Thanks. I didn't think about updating my resume, and I really should have thought about it.",
+            "Helper: No problem, I hope it helps.",
+            "Seeker: Should I talk with my coworker about it? He does not want that job.",
+            "Helper: If you feel that he might be able to provide more advice then sure."
+        ],
+        "helper_index": 5,
+        "conv_index": 186,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Questions",
+                "Suggestions"
+            ],
+            "feedback": "The goal is to help the seeker decide whether to talk to their coworker or not, but it would be more helpful to explore the pros and cons of this decision with them. Instead of giving a simple 'yes' or 'no' answer, it might be better to ask the seeker about their relationship with this coworker and how they think this conversation might go.",
+            "alternative": "That's an interesting idea. How do you feel about discussing this with your coworker and in what ways do you think this might help you?",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": false
+        }
+    },
+    {
+        "input": [
+            "Helper: I suggest you pretty soon adapt another dog. This might help you fill up the emptiness.",
+            "Seeker: I have been trying to get out of my slump. I even thought about getting a new dog, but that just brings up sad memories. What do you think I should do?",
+            "Helper: If you are not ready to get a new dog, another thing you might try to spend some time volunteering in a dog shelter... that might give you different perspective",
+            "Seeker: That actually sounds like a good idea. I hope the shelter near me will take volunteers with COVID and all.",
+            "Helper: If you are not comfortable going out due to COVID, you could involve some activities online promoting dog adaption and create awareness online and through social media.."
+        ],
+        "helper_index": 6,
+        "conv_index": 157,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Suggestions"
+            ],
+            "feedback": "The goal is to give suggestions that are sensitive to the seeker's concerns. It would be better to first validate the seeker's concerns about volunteering at a shelter during COVID before suggesting alternatives.",
+            "alternative": "I understand your concerns about volunteering at a shelter during COVID. What kind of activities would you feel comfortable with that might help you now?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: hi, can you help me?",
+            "Helper: Hello What is on your mind today?",
+            "Seeker: Well, school has just been getting so stressful, I don't have the motivation to keep up in class",
+            "Helper: so your not feeling motivated to do you school work?"
+        ],
+        "helper_index": 1,
+        "conv_index": 107,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Reflections"
+            ],
+            "feedback": "The goal is to help the seeker feel understood and safe. While the helper correctly identifies the seeker's issue, it might be better to reflect the seeker's feelings in a more empathetic tone.",
+            "alternative": "I understand, it sounds like the stress from school is affecting your motivation. Would you like to tell me more about it?",
+            "original-hasquestion": true,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Yeah I am, it's differential equations. Are you able to see the situation description I wrote that has more details?",
+            "Helper: I didn't see all the specifics but I remember taking that class. I went to my counselor and got a tutor which helped so much. It was offered for free at the college. Do you think you that is something you'd like to check out?",
+            "Seeker: Yeah that could be useful. I'm not sure if my school offers that - the math department isn't very good. I'm an engineering major. I wonder if an engineering professor or student could help instead",
+            "Helper: I had a student who was a genius (by my standards) helping me and he was so patient and understanding. This lessened the pressure and helped me move forward successfully in the class.",
+            "Seeker: Yeah that would be helpful. I think I need to hear things a different way. The professor is very confusing, but when I have gotten help from other students the concepts don't seem hard. I just don't do well with his teaching style I guess, it's not that I'm not smart enough to understand. Does that make sense?",
+            "Helper: Yes, I understand that sometimes being able to interpret things from someone who can communicate well can make the difference in understanding things."
+        ],
+        "helper_index": 5,
+        "conv_index": 391,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Empathy"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings while also encouraging them. It would be better to also acknowledge the seeker's ability to understand the concepts when they are explained differently.",
+            "alternative": "Absolutely, it makes sense. It's not about being smart enough, it's about how the information is presented. It seems like you grasp the concepts well when explained in a different way - that's a great strength to have.",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": true,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Hello!",
+            "Helper: Hello, how are you today?",
+            "Seeker: Doing okay. How about yourself?",
+            "Helper: I am doing well. Is anything troubling you?",
+            "Seeker: Sort of, yes.",
+            "Helper: Would you like to share?"
+        ],
+        "helper_index": 2,
+        "conv_index": 161,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Structure"
+            ],
+            "badareas": [
+                "Empathy"
+            ],
+            "feedback": "The goal is to make the seeker comfortable and encourage them to express their feelings. It would be better to show empathy and make the seeker feel understood and heard.",
+            "alternative": "I'm here to support you. Feel comfortable to share what's on your mind.",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I'm actually one of the best at my job. I wish I was that good with myself personally",
+            "Helper: I'm glad you have found success and fulfillment at your work.",
+            "Seeker: Thank you",
+            "Helper: If your job is good for you, what do you think makes you feel depressed then?",
+            "Seeker: I don't know what I'm going to myself when I'm not working. I feel hopeless about many things",
+            "Helper: Exercise? Reading? School? Friends? Hopelessness might be something that you have learned because you have expectations. Do you feel that there has to be some sort of result? Progress? Improvement?"
+        ],
+        "helper_index": 8,
+        "conv_index": 310,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Questions",
+                "Reflections"
+            ],
+            "feedback": "The goal is to explore the source of the seeker's feelings of hopelessness. Instead of assuming that the feelings are due to the seeker's expectations, it would be better to ask the seeker to explain their feelings in their own words.",
+            "alternative": "It sounds like you're feeling hopeless when you're not at work. Can you tell me more about the reasons you might be feeling that way?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hi! How's it going today?",
+            "Seeker: Hello! I'm pretty good today, what about you?",
+            "Helper: I'm doing really well, thanks. What brings you here today?",
+            "Seeker: I'm just having some old thoughts about a past relationship. IT's making me sad",
+            "Helper: I can appreciate that. Thinking about lost loves makes me sad too!. What about this particular relationship makes you feel sad?",
+            "Seeker: Yeahhh I re read some old messages from a while back and just started thinking about it again. IT's going to sound quite dramatic, but I regret breaking up with this person. I feel as though they were my soulmate. And I ruined it",
+            "Helper: Oh...I see, you think s/he's the \"one who got away?\". Why did you break up?",
+            "Seeker: Pretty much... but the dumb thing about that is I am the one who broke it off. I was with him since beginning of high school, and so I never knew anything other than him. But Earlier this year I was having second thoughts and thought we should try new things for a while. In the beginning, I was doing fine and he was having a really hard time. But now I miss him more than anything and he is now better off without me",
+            "Helper: Wow...that does sound painful. I know how hard it is to let go of a guy you really loved. I've had to break up with a few of them over the years!",
+            "Seeker: Yeah? Do you miss any of them? Or do you feel like it was right for you in the long run",
+            "Helper: In the long run, I feel that those break-ups were absolutely necessary. I'm in a really good place now. And they are too.",
+            "Seeker: Yeah that is good. That is everything that I'm hoping for. But it's not coming fast enough",
+            "Helper: I eventually learned to think of it like this: every man I loved taught me something important about myself. ANd I taught them things about themselves. ANd it doesn't happen overnight. But eventually, you will probably be able to see how you grew as a result of the breakup. Maybe the things you will learn can help you be ready for Mr Right!"
+        ],
+        "helper_index": 6,
+        "conv_index": 152,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Suggestions",
+                "Self-disclosure"
+            ],
+            "feedback": "The goal is to provide comfort and reassurance. However, it would be better to refrain from offering advice based on personal experiences and instead encourage the seeker to find their own path to healing.",
+            "alternative": "It's tough right now, and it's okay to feel this way. Healing takes time and everyone's experience is different. What's important is that you're taking care of yourself during this time.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: I think that is a very nice idea. I also might suggest finding activities that you both could enjoy and spend time together. Maybe finding a show you both could enjoy will open up room for a greater connection!. It could also help both of you feeling lonely during these hard times!",
+            "Seeker: Thanks... I need to find some motivation to do so as well...",
+            "Helper: Do you have any self-care activities that you enjoy doing? This could help feelings of depression. Even taking some time out of the week to do something you enjoy can help lift up one's mood.",
+            "Seeker: I don't have much hobbies but I tried to stay active like going to swim, doing yoga, reading books. So I kept myself busy already but more for the sake of getting my mind of things, like people playing video games and watching tv.",
+            "Helper: Well I am glad to hear that you have some activities you enjoy! In relation to your son, how do you feel when he plays video games constantly?"
+        ],
+        "helper_index": 11,
+        "conv_index": 55,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Questions"
+            ],
+            "badareas": [
+                "Empathy",
+                "Reflections"
+            ],
+            "feedback": "The goal is to empathize with the seeker and understand how they feel about their son's constant gaming. It might be more helpful to reflect on their feelings about it, rather than just asking a question.",
+            "alternative": "You're doing a great job keeping yourself active. I can understand if your son's constant gaming is concerning for you. Can you share more about how you feel when you see him playing video games a lot?",
+            "original-hasquestion": true,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": true,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I think so. but i can't tell this to my friends and family",
+            "Helper: Why do you feel you can't tell them?",
+            "Seeker: because they also become so sad when they know this",
+            "Helper: Well, I know it's tough but they can help you throught his."
+        ],
+        "helper_index": 13,
+        "conv_index": 335,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Suggestions"
+            ],
+            "feedback": "The goal is to empathize with the seeker and provide comfort. It would be better if the helper acknowledged the seeker's fear of making their loved ones sad, and then gently suggested that their family might still want to support them.",
+            "alternative": "It's really tough when you're worried about burdening your loved ones, isn't it? But remember, they care about you and would likely want to know what you're going through so they can support you.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation":false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hi there!! How can I help today?",
+            "Seeker: hey too. Have got a mental problem need your support if you don`t mind",
+            "Helper: Of course, would be glad to support. What's on your mind?",
+            "Seeker: Well, i was laid off from work during the Covid-19 period mid-last year (June) at a time when i was financially down. this was the start of my woes. Really need support since i have had rough time recollecting myself",
+            "Helper: I see, so sorry to hear that... How are you feeling due to that?",
+            "Seeker: I feel so anxious since i am not able to meet most of my family needs as i used to before covid",
+            "Helper: Ah I understand, is there any temporary financial support available for you and your family? If I may suggest this, you can look into programs that help re-employ or support laid off workers in your country."
+        ],
+        "helper_index": 3,
+        "conv_index": 147,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Suggestions"
+            ],
+            "feedback": "The goal here is to empathize with the seeker's anxiety over his financial situation. It might be better to continue to explore and validate the seeker's feelings before rushing to provide a solution.",
+            "alternative": "I can see how that would cause a great deal of anxiety. It sounds like you feel a lot of pressure to provide for your family. Can you tell me more about what that's been like for you?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": true,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hello, how are you doing today?",
+            "Seeker: I am feeling angry today about work.",
+            "Helper: Oh no, what happened to make you feel this way?",
+            "Seeker: My coworker expects me to do things the way she does and is constantly critical. I just want her to understand that I am able to do things my way and it is still okay. I told her this and she ignored me.",
+            "Helper: I'm sure that's terribly frustrating having someone treat you like that. Is this something that your boss is aware of?",
+            "Seeker: I have not told her yet. I do not want to get her into trouble and I want to have a good relationship with her.",
+            "Helper: Can you discuss it with her in a respectful way to get her to understand that you're not trying to undermine her but that this is how you work most efficiently? And maybe mention that you don't want to involve the boss?",
+            "Seeker: That's something I could try. I really care about my coworker and it makes me so angry that she treats me this way.",
+            "Helper: I think sometimes it's easy to jump to anger when you feel hurt. It might be worth telling her how you feel and also maybe ask why she thinks you should be doing things her way. Maybe there's a give and take in this situation. Some of her methods could be beneficial.",
+            "Seeker: Do you have any advice on how to start my conversation with her? I have found some of her ideas to be beneficial. I just would like my ideas expressed as well. I feel we can learn from each other.",
+            "Helper: Tell her the things that you like about her method and maybe suggest some of your methods to her as well. Maybe she'll find them to be more efficient. Make it a partnership rather than a fight for whose method is better. She could feel threatened by you so it's worth digging into those feelings with her and proving to her that you're working toward the same goal."
+        ],
+        "helper_index": 5,
+        "conv_index": 69,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Suggestions"
+            ],
+            "badareas": [
+                "Empathy"
+            ],
+            "feedback": "The goal is to provide advice that would help the seeker handle the situation. It would be more effective to ask the seeker how they feel about your suggestion, ensuring their comfort with this approach.",
+            "alternative": "One thing that might help is expressing appreciation for the parts of her method that you find useful, then introducing some of your own approaches as a suggestion for efficiency. How would you feel about trying this approach?",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I lost my job due to pandemic , Now I not able to satisfy my needs.",
+            "Helper: Oh! sorry to hear about that. I can understand it might be tough for you to deal all this",
+            "Seeker: I asked help from my friend, relatives and applied in online . not yet receive any positive result.",
+            "Helper: I know you can handle this tough time situation. These tough time teach us so many lessons and give the solutions too.",
+            "Seeker: I can't able to pay rent and hospital fees.",
+            "Helper: By chatting with you I can totally understand how you are feeling at this movement. Such situations put so much burden on us",
+            "Seeker: Sorry , I can't come over the situation . I lost my hope.",
+            "Helper: I feel the same when there is some financial or emotional problems in my life. Then I realize why I am not that strong to face it or why I was not prepare for it?",
+            "Seeker: If there is any opportunity we will put forward , but all the doors were closed , I was corner and helpless.",
+            "Helper: From my past experience I have leant at tough time like this, we should not give up. We should keep trying and some solution will come definitely.",
+            "Seeker: Yes I accept your thought and gives me support , thanks you for your concern.",
+            "Helper: What I have seen If we keep trying and stay motivated towards our goal, we for sure get that"
+        ],
+        "helper_index": 7,
+        "conv_index": 191,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Suggestions",
+                "Questions"
+            ],
+            "feedback": "The goal is to motivate the seeker and help them explore possible solutions. It might be more effective to ask more open-ended questions and encourage the seeker to come up with their own solutions.",
+            "alternative": "It's hard to keep pushing when everything seems against us. But sometimes, it's in those moments that we can discover new paths. What do you think about this?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: yha. also, im worried i might fail again if i get too distracted by my family",
+            "Helper: Is it possible for you to get any sort of private tutoring which might help you?",
+            "Seeker: i mean, tutoring is just another added time commitment. I really failed the first time because i was depressed and unmotivated. which is why I'm excited to be with my family finally",
+            "Helper: Ah .. in that case is it possible to talk to your doctor? They might be able to get a special allowance for you given your personal circumstances",
+            "Seeker: yeah. that's another thing. I havent told my therapist or even my parents yet. that i failed",
+            "Helper: I think that it would be a really good idea if you talked to them about it. They will probably be a lot more understanding than you might think",
+            "Seeker: what if they're disappointed",
+            "Helper: If they love you, and I am sure that your family do, then they will accept what has happened without criticism"
+        ],
+        "helper_index": 7,
+        "conv_index": 142,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Reflections",
+                "Validation",
+                "Empathy"
+            ],
+            "feedback": "The goal is to validate the seeker's fear of disappointment. Instead of making assumptions about how the family will react, it would be more effective to empathize with the seeker and explore their fears.",
+            "alternative": "Dealing with the fear of disappointing the ones we love can be really tough. Can you tell me more about what you're afraid might happen if you tell them?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: OK, that sounds like a good idea.",
+            "Helper: Im glad you think so",
+            "Seeker: I will try that and see if my anxiety go away.",
+            "Helper: Im glad, before then, what helps me calm down is going for a nice hike or run. It really lets me clear my head. Do you have anything you like to do to recenter yourself?"
+        ],
+        "helper_index": 8,
+        "conv_index": 30,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Questions"
+            ],
+            "badareas": [
+                "Self-disclosure"
+            ],
+            "feedback": "The goal is to give the seeker an opportunity to identify their own coping strategies. It would be more effective to focus on the seeker's experiences and not share personal coping mechanisms until the seeker has had an opportunity to share their own strategies.",
+            "alternative": "It's great to hear you're considering that step. In addition, do you have any activities that you enjoy or that help you to feel centered when you're feeling anxious?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Yes, she left me for her supervisor at work.",
+            "Helper: Was this a recent event?",
+            "Seeker: Yes, five days ago.",
+            "Helper: Wow, that's really a hard thing to deal with isn't it?",
+            "Seeker: It sure is. She told me this guy was sexually harassing her at work, then I find out she is leaving me for this guy.",
+            "Helper: Hmm, it sounds like she isn't being completely honest with you. I've been left before too. It was one of the most painful experiences of my life.",
+            "Seeker: I think she liked all of the attention he was giving her, and then she got turned on by it. It is sick. I can't believe anyone would ever leave you, you seem like such a nice person.",
+            "Helper: Maybe she did like the attention, but that is her own issue. It really doesn't have anything to do with you. Sometimes low self worth makes a person seek that kind of exterior validation from someone else."
+        ],
+        "helper_index": 6,
+        "conv_index": 21,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Validation",
+                "Reflections"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings and not to analyze the other person's actions. It might be more effective to help the seeker focus on their own feelings and reactions to the situation rather than speculating about the motives of the other person.",
+            "alternative": "It seems like you're feeling betrayed and confused about her actions. It's understandable to feel this way.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": true,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I feel drained, honestly. I'd love to talk about my current dilemma in my friend circle.",
+            "Helper: Can you share the dilemma you are having?",
+            "Seeker: Basically. This has happened for as long as I can remember, even back when I was a little kid. Any friend i've ever had has just used me for SOME gain. Whether that be boredom, money, or an emotional support pillow. I'm so sick of it. They'll literally ignore me for months and randomly text me for money. If i respond theyll read my messages then ignore me until they need money again. Or, they'll use me to throw alllll their problems onto me and never do the same for me. In some way shape or form- every person I become friends with uses me and throws me away when theyre done. Sometimes I feel like it must be me. Maybe i',m annoying? This happens so often the common denominator is ME. But i'm friendly, im assertive, im out spoken, im kind. I don't LET people walk all over me but it seems like that;s all I attract.",
+            "Helper: So you feel under valued in your relationships because people tend to take advantage of you.",
+            "Seeker: Pretty much. it just happens every single time. It's kind of discouraging and just makes me an angry person",
+            "Helper: It sounds like this is really bothering you. It is good that you are talking about it though. Have you tried telling them how they make you feel?",
+            "Seeker: Some of them. The others I never even get a chance because they just ignore my existence anytime I try and reach out to talk. I've just been waiting for them to pour their problems onto me or have the nerve to ask for money. Then i'll tell them. I already know they won't respond but atleast ill say my peace",
+            "Helper: After you tell them how you feel do you still give them money or listen to what's going on and try to help them.",
+            "Seeker: No. Whenever I do get to say my peace, i'll just cut contact completely. Lately i've been holding it in and just barely responding if at all. I've told one of them that i have no money and she hasn't contacted me since. But if she tries again i'll say something about the issue. I don't like feeling used. Who even has the nerve to blatantly use somebody like that? It's irritating",
+            "Helper: It's good that you let them know how you feel. By doing that, you are taking the first step in now allowing them to take advantage of you",
+            "Seeker: Agreed. I just hope that one day I can meet people and form actual friendships with them",
+            "Helper: It's really hard to stand up for yourself but it sounds like you are off to a good start. Have you taken any steps in trying to form new more meaningful relationships",
+            "Seeker: I thought I did. My husband and I made a couple friends. Theyre a couple and so are we so we go on double dates but they seem more drawn to him. Me and the other girl got very close and then boom she randomly decided she only wants to talk to me when shes mad or bored",
+            "Helper: So feel that this new couple might value the friendship with your husband more then you",
+            "Seeker: yeah it seems that way. Most people like him more than me and it's weird because he sucks at socializing and doesn't even like them that much. It just doens't make sense but that's just the way the ca rds were dealt",
+            "Helper: I used to have a hard time forming a meaningful relationship but then I realized it's because I had nothing in common with the people I was trying to form them with. Once I discovered something I was really drawn to I met people that way like volunteering in my community. Have you tried finding people you have more in common with."
+        ],
+        "helper_index": 8,
+        "conv_index": 351,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Self-disclosure",
+                "Questions"
+            ],
+            "feedback": "The goal is to help the seeker explore potential solutions to their problem. Instead of sharing personal experiences, it would be better to prompt the seeker to consider their interests and how they might meet people through those avenues.",
+            "alternative": "It seems like having shared interests can sometimes make forming meaningful relationships a bit easier. Have there been any activities or hobbies that you're interested in where you might meet like-minded people?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I lost my job 1 month ago and I can't find a new one, I have fear and anxiety that soon I will have nothing to pay with for my rent. Would you be able to suggest me how to cope with my fear?",
+            "Helper: I am sadden to hear that. I'm sure if you think positive and try really hard you will find a job and thinking postive will help with your fear and anxiety.",
+            "Seeker: It's just I feel fear all the time, and now with this pandemic it's really hard to find a job. I have a feelings now that if I fail I have to go back to my country as a loser.",
+            "Helper: It sounds like the pandemic has caused you to feel fear and have anxiety, is that right?",
+            "Seeker: It some sort of way, I lost my job because of it and my girlfriend is not talking to me as well now...",
+            "Helper: It sounds like you are under a lot of stress and don't have a way to realse that stress."
+        ],
+        "helper_index": 3,
+        "conv_index": 82,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Reflections"
+            ],
+            "badareas": [
+                "Questions",
+                "Empathy"
+            ],
+            "feedback": "The goal is to further understand the situation and provide emotional support. It might be more effective to ask open-ended questions to help the seeker express their feelings.",
+            "alternative": "It sounds like you're dealing with a lot right now. How have you been dealing with this fear and anxiety?",
+            "original-hasquestion": false,
+            "original-hasreflection": true,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: May I suggest that you seek some face to face support from a best friend or close family member.",
+            "Seeker: easier said then done I'm high risk so I have been social distancing",
+            "Helper: Its still possible. Social distancing, six feet away but in maybe your backyard or even a park away from others so you can talk with some degree of confidence that its private. Just being around another person is so very supportive and positive. Please try.",
+            "Seeker: maybe but I need to be carful plus honest I dont want many people to know about my feelings",
+            "Helper: True. Remember, you are not the only one facing these troubles, others are tackling it too. Try also to google online support groups on Reddit and blogs for additional assistance and suggestions from those who faced it and succeeded. Doing what others did to overcome it means not having to reinvent the whole process on your own.",
+            "Seeker: maybe an online chat group",
+            "Helper: That's the way to go. Keep seeking help. The right solution is there for you. Now you have a plan to get started."
+        ],
+        "helper_index": 10,
+        "conv_index": 25,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Reflections",
+                "Professionalism"
+            ],
+            "feedback": "The goal is to encourage the seeker in their steps towards finding support. It would be good to avoid making assumptions about what the seeker is comfortable with, and instead affirm their willingness to consider new approaches.",
+            "alternative": "I'm glad to hear that you're open to the idea of an online chat group. It's a step in the right direction. Remember, it's okay to take your time and figure out what works best for you.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": true,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": true,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Ugh, I have a huge problem with procrastination!. It used to work in high school, but I guess I really do need to make changes.",
+            "Helper: I know It's hard these days by the pandemic and all online things",
+            "Seeker: For some reason, it's a lot harder to ask questions online to my professors.",
+            "Helper: Then you find your answer by yourself, You NEED yo change",
+            "Seeker: I guess, but I just feel like I really need someone else to explain things to me. I have such a hard time concentrating on my own.",
+            "Helper: And remember, your at college, You should start to seek the answers more by yourself and your college mates and be less dependent on professors",
+            "Seeker: That's true, I guess I'm still thinking like I'm still in high school and I have a lot of bad habits to break.",
+            "Helper: Yes, I had all your problems but I tried to take the control little by little, the problem is still there but now I can manage it better",
+            "Seeker: What was your strategy?",
+            "Helper: I tried different things and I failed many times, You should try too, start to know yourself and how your body and mind works"
+        ],
+        "helper_index": 9,
+        "conv_index": 383,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Self-disclosure"
+            ],
+            "badareas": [
+                "Suggestions",
+                "Questions"
+            ],
+            "feedback": "The goal is to provide encouragement and share personal experiences without imposing advice. It could be more effective to ask the seeker how they feel about the idea of trying different strategies, and offer to explore potential solutions together.",
+            "alternative": "My journey involved a lot of trial and error, and what helped me was trying different strategies and seeing what works best. How do you feel about exploring some strategies together?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": true,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hello, what can I help you today?",
+            "Seeker: My depressive feelings and how to deal with them in a way I can cope. hello by the way....:)",
+            "Helper: How long have you lived with depression?",
+            "Seeker: For two weeks now.",
+            "Helper: Do you have problem with sleeping, eating or daily activity because of it?"
+        ],
+        "helper_index": 2,
+        "conv_index": 116,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Validation"
+            ],
+            "feedback": "The goal is to acknowledge the seeker's feelings and validate their emotions. It may be better to express empathy and validate the seeker's feelings first before delving into the details of the problem.",
+            "alternative": "Two weeks is a long time. Would you mind sharing what your depressive feelings look like in your life?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I thought I had everything set up for one of my resident's at a new placement and I called today to confirm and they told me the bed was no longer available. My boss is very intense and I'm scared that when I tell her she will let me go.",
+            "Helper: I see. It seems as though you've done your best, but I understand your feelings. Is it possible you can speak with your boss about it and explain?",
+            "Seeker: I can try that but my boss is very neurotic and I don't think she will want to hear my explanations.",
+            "Helper: I understand that, I also had a boss who acted this way. I can feel how stressed you are about this. Is there anything you think you can do to jump ahead of the situation?",
+            "Seeker: I could call the facility and find out when there next opening is and try to see if I can have the client placed on a waitlist so that he can be moved sooner.",
+            "Helper: I think that would be a great solution to your problem. I also think you can try some breathing exercises to help you be less anxious.",
+            "Seeker: That would actually be helpful. I always forget to do my breathing exercises.",
+            "Helper: Is there anything else you ussually do to help you relax?",
+            "Seeker: I listen to music or watch a funny show on TV.",
+            "Helper: That seems like a great way to relax! I know that's what helps me as well."
+        ],
+        "helper_index": 7,
+        "conv_index": 372,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Validation"
+            ],
+            "badareas": [
+                "Self-disclosure"
+            ],
+            "feedback": "The goal is to show empathy and support the seeker's coping mechanisms. It would be better to focus more on the seeker's experience than relating it to your own. This can be achieved by keeping the focus on the seeker and their feelings.",
+            "alternative": "That sounds like a wonderful way to relax. Music and comedy shows can indeed be a great source of comfort.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": true,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": false,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: hello!",
+            "Helper: hello there"
+        ],
+        "helper_index": 0,
+        "conv_index": 154,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Professionalism",
+                "Structure"
+            ],
+            "feedback": "The goal is to provide a professional welcome and encourage processing.",
+            "alternative": "Hi, how are you doing today?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": false,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: I totally understand how you feel. Take a deep breath and it can help you feel better.",
+            "Seeker: She doesn't have a mom figure in her life because her mom passed on when she was only three.",
+            "Helper: So sorry to hear this. I do think professional counselling can help.",
+            "Seeker: Its been quite a challenge to play both mom and dad in her life. Sometimes I feel inadequate to deal with female issues.",
+            "Helper: From our short conversation, I can feel the weights on your shoulder."
+        ],
+        "helper_index": 6,
+        "conv_index": 267,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Questions"
+            ],
+            "feedback": "The goal is to provide emotional support and validation for the seeker's struggles. While the empathy is good, it would benefit from exploring how the seeker is coping with all of this.",
+            "alternative": "I can tell that this is really weighing on you. What are you doing to take care of yourself through this situation?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": false,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Helper: Hello my name is Lisa, how are you today?",
+            "Seeker: Hi, I'm Megan. I'm just looking for some help really, I've been feeling down for a while and it's affecting my sleep. I feel tired during the day but cant fall or stay asleep at night.",
+            "Helper: Hi Megan, sorry to hear you are feeling down. And having trouble falling asleep is something I go through from time to time, I'll share some tips I have if you like.",
+            "Seeker: That would be great, I'd appreciate some tips. Nice to know other people are in the same boat.",
+            "Helper: Just curious how long have you been feeling down? And did you sleep okay before that?"
+        ],
+        "helper_index": 2,
+        "conv_index": 312,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Questions",
+                "Validation"
+            ],
+            "feedback": "The goal is to delve deeper into Megan's experiences and feelings. It would be better if the helper could focus the questions on one aspect at a time to avoid overwhelming the seeker.",
+            "alternative": "Of course, you're not alone in this. Can you tell me more about how long you've been feeling like this?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": true,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: I have always found it fascinating and have an uncle who is a microbiologist. But these days I feel I made the wrong decision. Is it too late to change?",
+            "Helper: It is never too late to change anything. However, i hear that you have always found it fascinating,have you considered talking to your uncle and seeing if you can find what you loved about it again?",
+            "Seeker: Yes that does sound like good advice. I do not want to turn by back on my studies of the past years. But my grades are really poor and I am not sure what to do about that.",
+            "Helper: Studying can be really difficult , especially when you are half way through. i struggled in my studies and found that talking to my tutors helped and approaching student support. Have you tried anything like that or has your motivation held you back?",
+            "Seeker: To be honest I have been a little afraid to approach them about the subject because they might accuse me of just slacking. I know it might look like that from the outside.",
+            "Helper: Just from chatting to you, I can sense that you are anxious, however, as many students feel this way, they will have a whole lot of help they can provide."
+        ],
+        "helper_index": 6,
+        "conv_index": 382,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [
+                "Empathy"
+            ],
+            "badareas": [
+                "Validation",
+                "Suggestions"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings and normalize their experience. It would be better to show more empathy by acknowledging the seeker's fear of approaching their tutors and validating their feelings. The helper could then gently encourage the seeker to consider seeking help, but do so in a non-presumptive manner.",
+            "alternative": "It's completely understandable that you're feeling anxious about approaching your tutors. Remember, it's okay to feel this way. Would you feel comfortable discussing ways of approaching them that might make you feel less fearful?",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": false,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: My sister works for Amazon and tried to put me forward twice but just no luck.",
+            "Helper: There are still many brick and mortar stores that will open after the pandemic is over, hopefully that will bring opportunity.",
+            "Seeker: I tried to stay hopeful. how about you? why did you pick to be a supporter? You are very nice by the way.",
+            "Helper: Are you interested in taking any classes to improve your skillset? There are many free courses available online."
+        ],
+        "helper_index": 6,
+        "conv_index": 285,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Structure",
+                "Self-disclosure"
+            ],
+            "feedback": "The goal is to respond to the seeker's question about why the helper chose to be a supporter. It would be great to answer the seeker's question and then turn the focus back to them.",
+            "alternative": "I chose to be a supporter because I enjoy helping people navigate through their challenges. It's great that you're staying hopeful. Do you think developing new skills could be beneficial for you?",
+            "original-hasquestion": true,
+            "original-hasreflection": false,
+            "original-hasempathy": false,
+            "original-hasvalidation": false,
+            "original-hassuggestion": true,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": false,
+            "original-hasstructure": false,
+            "alternative-hasquestion": true,
+            "alternative-hasreflection": false,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": true,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": true,
+            "alternative-hasstructure": true
+        }
+    },
+    {
+        "input": [
+            "Seeker: Hi. How is your evening?",
+            "Helper: Hello, I am doing well, thank you for asking :-) What can I help you with tonight?",
+            "Seeker: I\u2019m feeling pretty down and angry.",
+            "Helper: I'm sorry to hear that. Is there a particular issue that you are upset about?",
+            "Seeker: My girlfriend broke up with me.",
+            "Helper: That's a really rough situation to deal with, your emotions are totally understandable.",
+            "Seeker: I\u2019m feeling so down. Especially why she broke up with me.",
+            "Helper: What was the reason she gave for breaking up with you?",
+            "Seeker: She is black and I\u2019m white. It was tough on the relationship.",
+            "Helper: Cultural differences can be insurmountable obstacles in a relationship for some people.",
+            "Seeker: I know but our synergy was amazing. I miss her so much. That skin drove me crazy!",
+            "Helper: Getting over the good parts of a relationship can be hard. For some reason our brains like to obsess over the good parts like they were the only part of the relationship, and ignore all of the problems."
+        ],
+        "helper_index": 5,
+        "conv_index": 286,
+        "annotations": {
+            "perfect": false,
+            "goodareas": [],
+            "badareas": [
+                "Empathy",
+                "Validation"
+            ],
+            "feedback": "The goal is to validate the seeker's feelings of loss and provide empathetic support. It might be better to avoid making generalized statements about the nature of breakups and instead focus on the seeker's personal experience.",
+            "alternative": "It sounds like you miss her a lot and you are cherishing the good moments you had with her. That's natural and it's okay to feel this way.",
+            "original-hasquestion": false,
+            "original-hasreflection": false,
+            "original-hasempathy": true,
+            "original-hasvalidation": false,
+            "original-hassuggestion": false,
+            "original-hasprofessionalism": true,
+            "original-hasself-disclosure": true,
+            "original-hasstructure": true,
+            "alternative-hasquestion": false,
+            "alternative-hasreflection": true,
+            "alternative-hasempathy": true,
+            "alternative-hasvalidation": true,
+            "alternative-hassuggestion": false,
+            "alternative-hasprofessionalism": true,
+            "alternative-hasself-disclosure": false,
+            "alternative-hasstructure": true
+        }
+    }
+]
+
+
