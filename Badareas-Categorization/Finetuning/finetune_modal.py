@@ -45,7 +45,7 @@ def train_model():
         return tokenizer(example["entry"]["input"][-1].removeprefix("Helper: "), padding="max_length", truncation=True, max_length=512)
 
     # load data
-    dataset_id = #"youralien/feedback_qesconv_16wayclassification" # replace with our dataset
+    dataset_id = "huangfe/badareas_augmented_dataset_reflections_questions" #"youralien/feedback_qesconv_16wayclassification" # replace with our dataset
     dataset = load_dataset(dataset_id, split="train")
 
     # Split dataset further (80%) and validation (20%)
