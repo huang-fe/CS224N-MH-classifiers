@@ -40,6 +40,8 @@ def train_model():
     SKILL_CATEGORIES = ["Empathy", "Reflection", "Validation", "Suggestions", "Questions", "Professionalism", "Self-disclosure", "Structure"]
 
     def tokenize_function(example):
+        # IDK WHAT THE TABLE LOOKS LIKE BUT  
+        # !!!!!!!! "example["text"]" should be the last helper prompt !!!!!!!!!!
         return tokenizer(example["text"], padding="max_length", truncation=True, max_length=512)
 
     # load data
@@ -57,7 +59,7 @@ def train_model():
     # train_dataset = train_dataset.map(tokenize_function, batched=True)
     # eval_dataset = eval_dataset.map(tokenize_function, batched=True)
 
-    model_id = "google-bert/bert-base-cased"
+    model_id = "bert-base-cased"
     model_name = "bert" # "Llama2-7b"
 
     # Load Tokenizer
@@ -68,18 +70,20 @@ def train_model():
     # load model    
     model = AutoModelForSequenceClassification.from_pretrained(model_id, num_labels=2, torch_dtype="auto")
 
-    # which_class = "Empathy-goodareas"
-    #which_class = "Questions-badareas" # "Suggestions-badareas" # "Reflections-badareas" # "Empathy-badareas"
-    # SKILL_OPTIONS = ["Reflections", "Validation", "Empathy", "Questions", "Suggestions", "Self-disclosure", "Structure", "Professionalism"]
-    # goodareas_to_ignore = [f"{skill}-goodareas" for skill in SKILL_OPTIONS if f"{skill}-goodareas" != which_class]
-    # badareas_to_ignore = [f"{skill}-badareas" for skill in SKILL_OPTIONS if f"{skill}-badareas" != which_class]
-    # cols_to_remove = ['conv_index', 'helper_index', 'input', 'text']
-    # cols_to_remove.extend(goodareas_to_ignore)
-    # cols_to_remove.extend(badareas_to_ignore)
-    # if which_class in split_dataset["train"].features.keys():
     classifier_name = f"{skill}-badareas-suboptimal" #"{skill}-badareas-shouldHave" "{skill}-badareas-shouldNotHave"
+    
+    # !!!!! CHANGE THESE COLUMN NAMES BASED ON THE TABLE COLUMN NAMES !!!!!
+    COLUMNS = ["Reflection-badareas", "Validation-badareas", "Empathy-badareas", "Questions-badareas", "Suggestions-badareas", "Self-disclosure-badareas", "Structure-badareas", "Professionalism-badareas"]
+    
+    badareas_to_ignore = [f"{c}" for c in COLUMNS if f"{skill}" != classifier_name]
+    cols_to_remove = ['conv_index', 'helper_index', 'input', 'text']
+    cols_to_remove.extend(badareas_to_ignore)
+    # if which_class in split_dataset["train"].features.keys():
     split_dataset =  split_dataset.rename_column(classifier_name, "labels") # to match Trainer
     tokenized_dataset = split_dataset.map(tokenize_function, batched=True, remove_columns=cols_to_remove)
+    #check 
+    print("Example from Tokenized_dataset: ", tokenized_dataset["train"][0])
+    print("All Features: ", tokenized_dataset["train"].features)
 
     metric = evaluate.load("accuracy")
     def compute_metrics(eval_pred):
