@@ -20,13 +20,14 @@ def predict_skill(prompt: str, response: str, threshold: float = 0.1):
     return score[0] > threshold
 
 # Model validation using `predict_skill()`
-def validate_model(dataset, label_smoothing=0.1):
+def validate_model(dataset, threshold, label_smoothing):
     """Evaluate model's skill prediction accuracy with label smoothing."""
 
     metrics = {"TP": 0, "FP": 0, "FN": 0}
     correct = 0
 
-    for example in tqdm(dataset, desc="Processing examples", unit="example"):
+    # for example in tqdm(dataset, desc="Processing examples", unit="example"):
+    for example in dataset:
         seeker_prompt = example['input'][-2].removeprefix("Seeker: ")
         helper_response = example['input'][-1].removeprefix("Helper: ")
         alternative_response = example['annotations']['alternative']
@@ -34,7 +35,7 @@ def validate_model(dataset, label_smoothing=0.1):
         is_present_original = example['annotations']['original-hasreflection']
         is_present_alternative = example['annotations']['alternative-hasreflection']
 
-        is_predicted = predict_skill(seeker_prompt, helper_response)
+        is_predicted = predict_skill(seeker_prompt, helper_response, threshold)
 
         # Track per-skill metrics with label smoothing
         if is_present_original == is_predicted: correct+=1
@@ -63,7 +64,8 @@ def validate_model(dataset, label_smoothing=0.1):
     recall_skill = tp / (tp + fn) if (tp + fn) else 0
     f1_skill = (2 * precision_skill * recall_skill) / (precision_skill + recall_skill) if (precision_skill + recall_skill) else 0
     accuracy = correct / (len(dataset) *2)
-    return {"Precision": precision_skill, "Recall": recall_skill, "Accuracy": accuracy, "F1-score": f1_skill}
+    # return {"Precision": precision_skill, "Recall": recall_skill, "Accuracy": accuracy, "F1-score": f1_skill}
+    return {"Accuracy": accuracy, "F1-score": f1_skill}
 
 
 # -------------------- MAIN DRIVER CODE --------------------
@@ -74,12 +76,82 @@ if __name__ == "__main__":
     dataset = load_dataset("validation_set_skills.json")
     # print(dataset[0])
 
+    results = validate_model(dataset, threshhold = 0.1, label_smoothing=0.0)
+    print(results)
+
     # Run validation with the fine-tuned model
-    results = validate_model(dataset)
+    # for threshhold in [0.1, 0.6, 0.8]:
+    #     for smoothing in np.arange(0, 1, 0.1):
+    #         results = validate_model(dataset, threshhold, smoothing)
+    #         print("Threshold: ", threshhold, " Smoothing: ", smoothing)
+    #         print(results)
 
     # Save results
-    output_file = "reflection_validation_results.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2)
+    # output_file = "reflection_validation_results.json"
+    # with open(output_file, "w", encoding="utf-8") as f:
+    #     json.dump(results, f, indent=2)
 
-    print(f"\u2705 Validation results saved to {output_file}")
+    # print(f"\u2705 Validation results saved to {output_file}")
+
+
+    #not good
+# Threshold:  0.1  Smoothing:  0.0
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3157894736842105)}
+# Threshold:  0.1  Smoothing:  0.1
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.33898305084745767)}
+# Threshold:  0.1  Smoothing:  0.2
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3658536585365853)}
+# Threshold:  0.1  Smoothing:  0.30000000000000004
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3973509933774836)}
+# Threshold:  0.1  Smoothing:  0.4
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.4347826086956523)}
+# Threshold:  0.1  Smoothing:  0.5
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.48)}
+# Threshold:  0.1  Smoothing:  0.6000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.5357142857142856)}
+# Threshold:  0.1  Smoothing:  0.7000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.6060606060606062)}
+# Threshold:  0.1  Smoothing:  0.8
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.697674418604651)}
+# Threshold:  0.1  Smoothing:  0.9
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.8219178082191781)}
+# Threshold:  0.6  Smoothing:  0.0
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3157894736842105)}
+# Threshold:  0.6  Smoothing:  0.1
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.33898305084745767)}
+# Threshold:  0.6  Smoothing:  0.2
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3658536585365853)}
+# Threshold:  0.6  Smoothing:  0.30000000000000004
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3973509933774836)}
+# Threshold:  0.6  Smoothing:  0.4
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.4347826086956523)}
+# Threshold:  0.6  Smoothing:  0.5
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.48)}
+# Threshold:  0.6  Smoothing:  0.6000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.5357142857142856)}
+# Threshold:  0.6  Smoothing:  0.7000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.6060606060606062)}
+# Threshold:  0.6  Smoothing:  0.8
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.697674418604651)}
+# Threshold:  0.6  Smoothing:  0.9
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.8219178082191781)}
+# Threshold:  0.8  Smoothing:  0.0
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3157894736842105)}
+# Threshold:  0.8  Smoothing:  0.1
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.33898305084745767)}
+# Threshold:  0.8  Smoothing:  0.2
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3658536585365853)}
+# Threshold:  0.8  Smoothing:  0.30000000000000004
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.3973509933774836)}
+# Threshold:  0.8  Smoothing:  0.4
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.4347826086956523)}
+# Threshold:  0.8  Smoothing:  0.5
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.48)}
+# Threshold:  0.8  Smoothing:  0.6000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.5357142857142856)}
+# Threshold:  0.8  Smoothing:  0.7000000000000001
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.6060606060606062)}
+# Threshold:  0.8  Smoothing:  0.8
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.697674418604651)}
+# Threshold:  0.8  Smoothing:  0.9
+# {'Accuracy': 0.77, 'F1-score': np.float64(0.8219178082191781)}
