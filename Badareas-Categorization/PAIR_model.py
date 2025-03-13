@@ -53,7 +53,7 @@ def run_model(prompt, response):
     batch = tokenizer(prompt, response, padding='longest', truncation=True, return_tensors='pt').to(device)
     with torch.no_grad():
         sims = model.score_forward(**batch).sigmoid().flatten().tolist()
-    return sims
+    return sims[0]
 
 # print("False" * 30)
 # #should be 0

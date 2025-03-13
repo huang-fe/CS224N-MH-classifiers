@@ -17,11 +17,14 @@ def hasQuestion(text):
     return "?" in text
 
 # Model inference for a single skill
-def predict_skill(prompt: str, response: str, threshold: float = 0.1):
+def predict_skill(prompt: str, response: str, isQ: bool): #, threshold: float = 0.1):
     # score returned by PAIR = continuous between 0-1, 0: No reflection, 0.5: Simple reflection, 1: Complex reflection
     # score = run_model(prompt, response)
     # return score[0] > threshold
-    return hasQuestion(response)
+    if isQ:
+        return hasQuestion(response)
+    else: 
+        return run_model(prompt, response) > 0.1
 
 # Model validation using `predict_skill()`
 def validate_model(dataset, threshold, label_smoothing):

@@ -3,75 +3,85 @@ import numpy as np
 import torch
 import pandas as pd
 from tqdm import tqdm
-from setfit import SetFitModel
-from has_skill import SkillDetector
+from validate_skill import predict_skill
+from datasets import load_dataset
 
-dataset_id = "youralien/feedback_qesconv_16wayclassification"
+dataset_id = "SALT-NLP/feedback_qesconv"
 dataset = load_dataset(dataset_id, split="train")
-
-# Split dataset further (80%) and validation (20%)
-split_dataset = dataset.train_test_split(test_size=0.2)
 
 # # Load dataset
 # with open("./SALT-NLP-new/feedback_qesconv_full.json", "r", encoding="utf-8") as f:
 #     dataset = json.load(f)
-
-skill_detector = SkillDetector(model)
-
 # Create a list to store the processed entries
 binary_data = []
 
-skill = "question"
+skills = ["questions", "reflections"]
 
 for example in tqdm(dataset, desc="Processing entries", unit="entry"):
-    seeker_prompt = example['input'][-2].removeprefix("Seeker: ")
-    helper_response = example['input'][-1].removeprefix("Helper: ")
-    alternative_response = example['annotations']['alternative']
-    
-    is_present_original = example['annotations']['original-hasquestion']
-    is_present_alternative = example['annotations']['alternative-hasquestion']
+# for i in range(100, 110):
+    # seeker_prompt = example['input'][-2].removeprefix("Seeker: ")
+    # text = dataset[i]["text"]
+    # print("index : ", i)
+    text = example["text"]
 
-    is_in_badarea = Reflections-badareas
     # Extract all helper responses
     lines = text.split("\n")
+    # print("lines: ",lines)
     helper_responses = [line.replace("Helper: ", "").strip() for line in lines if line.startswith("Helper:")]
-    helper_text = " ".join(helper_responses)
+    original_response = "" if len(helper_responses) == 0 else helper_responses[-1]
+    seeker_messages = [line.replace("Seeker: ", "").strip() for line in lines if line.startswith("Seeker:")]
+    # print("seeker messages : ", seeker_messages)
+    prompt = "" if len(seeker_messages) == 0 else seeker_messages[-1]
+    # print("prompt : ", seeker_messages)
+    # print("original response : ", original_response) 
 
-    # Extract feedback section
-    response_section = entry["text"].split("### Response:")[-1].strip()
-    feedback = json.loads(response_section) if response_section.startswith("{") else {}
+    # # Extract feedback section
+    response_section = text.split("### Response:")[-1].strip()
+    response_JSON = json.loads(response_section) if response_section.startswith("{") else {}
+    # print("response_JSON : ", response_JSON)
+    
+    alternative_response = response_JSON.get("alternative", "")  
+    # print("alternative response : ", alternative_response)   
 
     # Process bad areas
-    badareas = feedback.get("badareas", [])
+    badareas = response_JSON.get("badareas", [])
     badareas = [skill.lower() for skill in badareas]  # Normalize case
-
-    skill_predictions = skill_detector.detect_all_skills(helper_text)
-    badareas_should_have = []
-    badareas_suboptimal = []
-
-    skill_present_original = skill_predictions[skill][0]
-
-    # Add to should_have if the skill is in badareas and is missing
-    if skill in badareas and not skill_present_original:
-        badareas_should_have.append(skill)
-
-    # Add to suboptimal if the skill is in badareas but was present
-    if skill in badareas and skill_present_original:
-        badareas_suboptimal.append(skill)
+    # print("badareas : ", badareas)
 
     # Create a binary entry
     binary_entry = {
-        "Entry": text
+        "Entry": text,
+        "seeker-prompt": prompt,
+        "last-helper-response": original_response,
+        "alternative-response": alternative_response
     }
+    for skill in skills:
+      in_badarea = skill in badareas
+      isQ = skill==skills[0]
+      in_original = predict_skill(prompt, original_response, isQ)
+      in_alternative = False if alternative_response == "" else predict_skill(prompt, alternative_response, isQ)
 
-    for skill in skill_categories:
-        binary_entry[f"{skill}-badarea-shouldhave"] = int(skill in badareas_should_have)
-        binary_entry[f"{skill}-badarea-optimal"] = int(skill in badareas_suboptimal)
+      badareas_shouldhave = 0
+      badareas_shouldnothave = 0
+      badareas_suboptimal = 0
+
+      # Add to should_have if the skill is in badareas and is missing
+      if skill in badareas:
+        if in_original and in_alternative:
+          badareas_suboptimal = 1
+        if in_original and not in_alternative:
+          badareas_shouldnothave = 1
+        if not in_original and in_alternative:
+          badareas_shouldhave = 1
+
+      binary_entry[f"{skill}-badarea-shouldhave"] = badareas_shouldhave
+      binary_entry[f"{skill}-badarea-optimal"] = badareas_suboptimal
+      binary_entry[f"{skill}-badarea-shouldnothave"] = badareas_shouldnothave
 
     binary_data.append(binary_entry)
 
 # Save as JSON
-with open("augmented_dataset_binary.json", "w", encoding="utf-8") as f:
+with open("augmented_dataset_reflections_questions_binary.json", "w", encoding="utf-8") as f:
     json.dump(binary_data, f, indent=4)
 
 print(f"\nBinary dataset saved to augmented_dataset_binary.json")
