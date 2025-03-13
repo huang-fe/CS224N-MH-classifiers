@@ -12,8 +12,8 @@ from transformers import AutoTokenizer
 # model = AutoModelForSequenceClassification.from_pretrained("paragon-analytics/bert_empathy")
 
 # https://huggingface.co/mmillet/distilrubert-tiny-cased-conversational-v1_finetuned_empathy_classifier
-# tokenizer = AutoTokenizer.from_pretrained("mmillet/distilrubert-tiny-cased-conversational-v1_finetuned_empathy_classifier")
-# model = AutoModelForSequenceClassification.from_pretrained("mmillet/distilrubert-tiny-cased-conversational-v1_finetuned_empathy_classifier")
+tokenizer = AutoTokenizer.from_pretrained("mmillet/distilrubert-tiny-cased-conversational-v1_finetuned_empathy_classifier")
+model = AutoModelForSequenceClassification.from_pretrained("mmillet/distilrubert-tiny-cased-conversational-v1_finetuned_empathy_classifier")
 
 model.eval()
 
@@ -73,6 +73,7 @@ if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
     test_model()
+    # print(classify_text("bob"))
     
 # distilrubert results:
 # (1, 0.4327591359615326)
@@ -81,6 +82,7 @@ if __name__ == "__main__":
 # (1, 0.6738070249557495)
 # (1, 0.49049681425094604)
 # (1, 0.7863013744354248)
+# (1, 0.8711757659912109)
 
 # roberta results:
 # 0.8613588

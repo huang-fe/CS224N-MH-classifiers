@@ -37,12 +37,12 @@ def train_model():
     logger.info("LOGGER")
 
     skill = "Reflection"
-    SKILL_CATEGORIES = ["Empathy", "Reflection", "Validation", "Suggestions", "Questions", "Professionalism", "Self-disclosure", "Structure"]
 
     def tokenize_function(example):
         # IDK WHAT THE TABLE LOOKS LIKE BUT  
         # !!!!!!!! "example["text"]" should be the last helper prompt !!!!!!!!!!
-        return tokenizer(example["text"], padding="max_length", truncation=True, max_length=512)
+        print("Within tokenize_function: ": example["entry"]["input"][-1].removeprefix("Helper: "))
+        return tokenizer(example["entry"]["input"][-1].removeprefix("Helper: "), padding="max_length", truncation=True, max_length=512)
 
     # load data
     dataset_id = #"youralien/feedback_qesconv_16wayclassification" # replace with our dataset
@@ -73,11 +73,22 @@ def train_model():
     classifier_name = f"{skill}-badareas-suboptimal" #"{skill}-badareas-shouldHave" "{skill}-badareas-shouldNotHave"
     
     # !!!!! CHANGE THESE COLUMN NAMES BASED ON THE TABLE COLUMN NAMES !!!!!
-    COLUMNS = ["Reflection-badareas", "Validation-badareas", "Empathy-badareas", "Questions-badareas", "Suggestions-badareas", "Self-disclosure-badareas", "Structure-badareas", "Professionalism-badareas"]
-    
-    badareas_to_ignore = [f"{c}" for c in COLUMNS if f"{skill}" != classifier_name]
+    suffixes = ["-badareas-suboptimal", "-badareas-shouldhave", "-badareas-shouldnothave" ]
+               #"Validation-badareas", "Empathy-badareas", "Questions-badareas", "Suggestions-badareas", "Self-disclosure-badareas", "Structure-badareas", "Professionalism-badareas"]
+    skill_categories = [
+        "empathy", "validation", "suggestion", "question",
+        "professionalism", "self-disclosure", "structure"
+    ]
+    columns = []
+    for s in skill_categories:
+        for suffix in suffixes:
+            columns.append(s+suffix)
+    print("all columns: ", columns)
+
+    columns_to_remove = [f"{c}" for c in columns if c != classifier_name]
     cols_to_remove = ['conv_index', 'helper_index', 'input', 'text']
-    cols_to_remove.extend(badareas_to_ignore)
+    cols_to_remove.extend(columns_to_remove)
+    print("columns to remove: ", columns)
     # if which_class in split_dataset["train"].features.keys():
     split_dataset =  split_dataset.rename_column(classifier_name, "labels") # to match Trainer
     tokenized_dataset = split_dataset.map(tokenize_function, batched=True, remove_columns=cols_to_remove)
@@ -128,7 +139,7 @@ def train_model():
     trainer.create_model_card()
     trainer.push_to_hub()
 
-    print(f"\u2705 Model & tokenizer saved")
+    print("Model & tokenizer saved")
 
 if __name__ == "__main__":
     with app.run():
