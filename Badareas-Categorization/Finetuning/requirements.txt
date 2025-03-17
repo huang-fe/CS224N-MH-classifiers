@@ -8,3 +8,4 @@ tokenizers
 accelerate
 hf-transfer
 huggingface_hub
+scikit-learn

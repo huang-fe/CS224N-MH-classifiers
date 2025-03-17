@@ -24,6 +24,8 @@ def train_model():
     from transformers.utils import logging
     #from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
     #from trl import SFTTrainer
+    from sklearn.utils.class_weight import compute_class_weight
+    from torch.nn import CrossEntropyLoss
     import torch
     import evaluate
 
@@ -36,48 +38,67 @@ def train_model():
     logger = logging.get_logger("transformers")
     logger.info("LOGGER")
 
-    skill = "Reflection"
+    def prepare_input_text(example):
+        # Convert the last two items of input list to a single text
+        return {
+            'text': "Seeker: " + example["seeker-prompt"] + "\n Helper: " + example["last-helper-response"],
+            **{k:v for k,v in example.items() if k != 'input'}  # Keep other fields
+        }
 
     def tokenize_function(example):
-        # IDK WHAT THE TABLE LOOKS LIKE BUT  
         # !!!!!!!! "example["text"]" should be the last helper prompt !!!!!!!!!!
-        print("Within tokenize_function: ": example["entry"]["input"][-1].removeprefix("Helper: "))
-        return tokenizer(example["entry"]["input"][-1].removeprefix("Helper: "), padding="max_length", truncation=True, max_length=512)
+        # text = "Seeker: " + example["seeker-prompt"] + "\n Helper: " + example["last-helper-response"]
+        # print("Within tokenize_function: ", example['text'])
+        return tokenizer(example['text'], padding="max_length", truncation=True, max_length=512)
 
     # load data
-    dataset_id = "huangfe/badareas_augmented_dataset_reflections_questions" #"youralien/feedback_qesconv_16wayclassification" # replace with our dataset
+    dataset_id = "huangfe/feedback_qesconv_badareas_questions_reflections" #"youralien/feedback_qesconv_16wayclassification"
     dataset = load_dataset(dataset_id, split="train")
 
     # Split dataset further (80%) and validation (20%)
     split_dataset = dataset.train_test_split(test_size=0.2)
-    # print(f"Train dataset size: {len(split_dataset['train'])}")
-    # print(f"Test dataset size: {len(split_dataset['test'])}")
+    # Apply the preprocessing
+    split_dataset = split_dataset.map(prepare_input_text)
+    split_dataset['train'][0]
+    print(f"Train dataset size: {len(split_dataset['train'])}")
+    print(f"Test dataset size: {len(split_dataset['test'])}")
     # train_dataset = split_dataset['train']
     # eval_dataset = split_dataset['test']
 
     # apply tokenization
     # train_dataset = train_dataset.map(tokenize_function, batched=True)
     # eval_dataset = eval_dataset.map(tokenize_function, batched=True)
-
+    
+    skill = "reflections"
     model_id = "bert-base-cased"
     model_name = "bert" # "Llama2-7b"
 
     # Load Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_id)
+    if tokenizer.pad_token is None:
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+
     tokenizer.model_max_length = 512 # set model_max_length to 512 as prompts are not longer than 1024 tokens
-    tokenizer.pad_token = tokenizer.eos_token 
-    tokenizer.pad_token_id = tokenizer.eos_token_id
+    # tokenizer.pad_token = tokenizer.eos_token 
+    # tokenizer.pad_token_id = tokenizer.eos_token_id
+
     # load model    
     model = AutoModelForSequenceClassification.from_pretrained(model_id, num_labels=2, torch_dtype="auto")
+    model.config.pad_token_id = tokenizer.pad_token_id #model.config.eos_token_id
+    model.resize_token_embeddings(len(tokenizer))
 
-    classifier_name = f"{skill}-badareas-suboptimal" #"{skill}-badareas-shouldHave" "{skill}-badareas-shouldNotHave"
+    classifier_name = f"{skill}-badarea-suboptimal" #"{skill}-badareas-shouldHave" "{skill}-badareas-shouldNotHave"
+    print("Classifier name: ", classifier_name)
     
     # !!!!! CHANGE THESE COLUMN NAMES BASED ON THE TABLE COLUMN NAMES !!!!!
-    suffixes = ["-badareas-suboptimal", "-badareas-shouldhave", "-badareas-shouldnothave" ]
+    suffixes = ["-badarea-suboptimal", "-badarea-shouldhave", "-badarea-shouldnothave" ]
                #"Validation-badareas", "Empathy-badareas", "Questions-badareas", "Suggestions-badareas", "Self-disclosure-badareas", "Structure-badareas", "Professionalism-badareas"]
     skill_categories = [
-        "empathy", "validation", "suggestion", "question",
-        "professionalism", "self-disclosure", "structure"
+        # "empathy", "validation", "suggestion", 
+        "questions", "reflections"
+        # "professionalism", "self-disclosure", "structure"
     ]
     columns = []
     for s in skill_categories:
@@ -86,15 +107,25 @@ def train_model():
     print("all columns: ", columns)
 
     columns_to_remove = [f"{c}" for c in columns if c != classifier_name]
-    cols_to_remove = ['conv_index', 'helper_index', 'input', 'text']
+    cols_to_remove = ['Entry', 'alternative-response', 'seeker-prompt', 'last-helper-response']
     cols_to_remove.extend(columns_to_remove)
     print("columns to remove: ", columns)
     # if which_class in split_dataset["train"].features.keys():
     split_dataset =  split_dataset.rename_column(classifier_name, "labels") # to match Trainer
     tokenized_dataset = split_dataset.map(tokenize_function, batched=True, remove_columns=cols_to_remove)
     #check 
-    print("Example from Tokenized_dataset: ", tokenized_dataset["train"][0])
-    print("All Features: ", tokenized_dataset["train"].features)
+    # print("Example from Tokenized_dataset: ", tokenized_dataset["train"][0])
+    # print("All Features: ", tokenized_dataset["train"].features)
+
+    # labels = np.array(tokenized_dataset["train"]["labels"])  
+
+    # # Compute class weights
+    # class_weights = compute_class_weight(class_weight="balanced", classes=np.unique(labels), y=labels)
+    # class_weights = torch.tensor(class_weights, dtype=torch.float)
+
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # class_weights = class_weights.to(device)
+    # loss_fn = CrossEntropyLoss(weight=class_weights)
 
     metric = evaluate.load("accuracy")
     def compute_metrics(eval_pred):

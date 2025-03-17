@@ -75,13 +75,13 @@ for example in tqdm(dataset, desc="Processing entries", unit="entry"):
           badareas_shouldhave = 1
 
       binary_entry[f"{skill}-badarea-shouldhave"] = badareas_shouldhave
-      binary_entry[f"{skill}-badarea-optimal"] = badareas_suboptimal
+      binary_entry[f"{skill}-badarea-suboptimal"] = badareas_suboptimal
       binary_entry[f"{skill}-badarea-shouldnothave"] = badareas_shouldnothave
 
     binary_data.append(binary_entry)
 
 # Save as JSON
-with open("augmented_dataset_reflections_questions_binary.json", "w", encoding="utf-8") as f:
+with open("feedback_qesconv_badareas_reflections_questions_augmented.json", "w", encoding="utf-8") as f:
     json.dump(binary_data, f, indent=4)
 
 print(f"\nBinary dataset saved to augmented_dataset_binary.json")
