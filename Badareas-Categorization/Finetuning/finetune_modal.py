@@ -1,5 +1,7 @@
 import modal
 import os
+from transformers import AutoModelForSequenceClassification
+import torch
 
 # Define Modal app
 app = modal.App("badareas-classifier")
@@ -8,6 +10,29 @@ image = (
   modal.Image.from_registry("pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime")
   .pip_install_from_requirements("requirements.txt") 
 )
+
+# class WeightedBERTForSequenceClassification(AutoModelForSequenceClassification):
+#     def __init__(self, model_name, num_labels, class_weights):
+        
+#         # ✅ Load Pretrained Weights Separately
+#         self.model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, torch_dtype="auto")
+        
+#         # ✅ Move class weights to the correct device
+#         self.class_weights = class_weights.to(self.model.device)
+        
+#         # ✅ Define weighted loss function
+#         self.loss_fn = torch.nn.CrossEntropyLoss(weight=self.class_weights)
+    
+#     def forward(self, input_ids=None, attention_mask=None, labels=None, **kwargs):
+#         outputs = super().forward(input_ids=input_ids, attention_mask=attention_mask, labels=None, **kwargs)
+#         logits = outputs.logits
+        
+#         loss = None
+#         if labels is not None:
+#             loss = self.loss_fn(logits, labels)
+        
+#         return {"loss": loss, "logits": logits} if loss is not None else {"logits": logits}
+
 
 @app.function(
         image=image,
@@ -81,13 +106,7 @@ def train_model():
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     tokenizer.model_max_length = 512 # set model_max_length to 512 as prompts are not longer than 1024 tokens
-    # tokenizer.pad_token = tokenizer.eos_token 
-    # tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # load model    
-    model = AutoModelForSequenceClassification.from_pretrained(model_id, num_labels=2, torch_dtype="auto")
-    model.config.pad_token_id = tokenizer.pad_token_id #model.config.eos_token_id
-    model.resize_token_embeddings(len(tokenizer))
 
     classifier_name = f"{skill}-badarea-suboptimal" #"{skill}-badareas-shouldHave" "{skill}-badareas-shouldNotHave"
     print("Classifier name: ", classifier_name)
@@ -115,17 +134,25 @@ def train_model():
     tokenized_dataset = split_dataset.map(tokenize_function, batched=True, remove_columns=cols_to_remove)
     #check 
     # print("Example from Tokenized_dataset: ", tokenized_dataset["train"][0])
-    # print("All Features: ", tokenized_dataset["train"].features)
+    # print("All Features: ", tokenized_dataset["train"].features) 
 
-    # labels = np.array(tokenized_dataset["train"]["labels"])  
-
-    # # Compute class weights
+    # # Compute class weights DOESNT WORK
+    # labels = np.array(tokenized_dataset["train"]["labels"]) 
     # class_weights = compute_class_weight(class_weight="balanced", classes=np.unique(labels), y=labels)
     # class_weights = torch.tensor(class_weights, dtype=torch.float)
-
     # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # class_weights = class_weights.to(device)
-    # loss_fn = CrossEntropyLoss(weight=class_weights)
+    # loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights)
+    
+    # load model    
+    model = AutoModelForSequenceClassification.from_pretrained(model_id, num_labels=2, torch_dtype="auto")
+    # weighted_model = WeightedBERTForSequenceClassification(
+    #     model_name=model_id, 
+    #     num_labels=2, 
+    #     class_weights=class_weights
+    # )
+    model.config.pad_token_id = tokenizer.pad_token_id #model.config.eos_token_id
+    model.resize_token_embeddings(len(tokenizer))
 
     metric = evaluate.load("accuracy")
     def compute_metrics(eval_pred):
@@ -133,7 +160,7 @@ def train_model():
         predictions = np.argmax(logits, axis=-1)
         return metric.compute(predictions=predictions, references=labels)
 
-    save_directory = f"{model_name}-{classifier_name}-classifier"
+    save_directory = f"{model_name}-{classifier_name}-classifier-class-weights"
     training_args = TrainingArguments(
         output_dir=save_directory,
         eval_strategy="epoch",
@@ -158,6 +185,7 @@ def train_model():
         eval_dataset=tokenized_dataset["test"],
         tokenizer=tokenizer,
         compute_metrics=compute_metrics,
+        # compute_loss_func=loss_fn,
         callbacks=[EarlyStoppingCallback(early_stopping_patience=4)]
     )
 
